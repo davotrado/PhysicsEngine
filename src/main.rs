@@ -37,7 +37,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>>
     let mut body_positions: Vec<Vec<(f32, f32)>> = vec![Vec::new(); bodies.len()
     ];
 
-    for frame in 0..300 {
+    for _ in 0..300 {
         physics_step(&mut bodies, dt);
 
         for (i, body) in bodies.iter().enumerate() {
